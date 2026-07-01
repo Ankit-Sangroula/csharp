@@ -1,0 +1,7 @@
+A variable is a labeled box in memory. The type tells C# how big the box is and what kind of data it can hold.
+
+csharpint age = 20;              // whole numbers
+double price = 99.99;      // decimal numbers
+char grade = 'A';          // single character
+string name = "Ankit";     // text
+bool isPassed = true;      // true/false

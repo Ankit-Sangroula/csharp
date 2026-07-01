@@ -8,4 +8,8 @@
     <StartupObject>Calculate</StartupObject>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="coding\Basics\" />
+  </ItemGroup>
+
 </Project>
