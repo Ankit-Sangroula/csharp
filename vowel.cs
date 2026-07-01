@@ -20,5 +20,7 @@ class vowel
             Console.WriteLine("Division = " + (num1 / num2));
             Console.WriteLine("Remainder = " + (num1 % num2));
         }
+
+        Console.ReadKey();
     }
 }
