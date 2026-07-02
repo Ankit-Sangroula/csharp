@@ -5,11 +5,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Array</StartupObject>
+    <StartupObject>Polygon</StartupObject>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="coding\Basics\" />
-  </ItemGroup>
 
 </Project>
