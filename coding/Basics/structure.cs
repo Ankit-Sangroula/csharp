@@ -2,7 +2,7 @@
 
 namespace MyApp
 {
-    class Program
+    class Structure
     {
         static void Main()  // program starts here
         {
