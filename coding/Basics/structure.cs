@@ -1,6 +1,6 @@
 ﻿using System;               // gives access to Console, etc.
 
-namespace MyApp
+namespace first.coding.Basics
 {
     class Structure
     {
