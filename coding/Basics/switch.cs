@@ -1,29 +1,22 @@
 ﻿using System;
 
-class switch{
-    static void main()
+class DayFinder
 {
-    Console.WriteLine("Enter Marks:");
-    double marks = double.Parse(Console.ReadLine());
-
-    switch (day)
+    static void Main()
     {
-        case1: Console.WriteLine("Sunday");
-        break;
-        case2: Console.WriteLine("Monday");
-        break;
-        case2: Console.WriteLine("Tuesday");
-        break;
-        case2: Console.WriteLine("Wenesday");
-        break;
-        case2: Console.WriteLine("Thrusday");
-        break;
-        case2: Console.WriteLine("Friday");
-        break;
-        case7: Console.WriteLine("Saturday");
-        break;
+        Console.WriteLine("Enter day number (1-7):");
+        int day = int.Parse(Console.ReadLine());
 
-
-}
-}
+        switch (day)
+        {
+            case 1: Console.WriteLine("Sunday"); break;
+            case 2: Console.WriteLine("Monday"); break;
+            case 3: Console.WriteLine("Tuesday"); break;
+            case 4: Console.WriteLine("Wednesday"); break;
+            case 5: Console.WriteLine("Thursday"); break;
+            case 6: Console.WriteLine("Friday"); break;
+            case 7: Console.WriteLine("Saturday"); break;
+            default: Console.WriteLine("Invalid day"); break;
+        }
+    }
 }
