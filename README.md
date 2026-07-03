@@ -99,3 +99,6 @@ C# provides conditional statements that allow you to control the flow of your pr
  It enables a single interface to represent different underlying forms (data types). In C#, polymorphism is achieved through method overriding and interfaces, allowing for dynamic method invocation and flexibility in code design.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
+# field:
+Fields are variables that are declared within a class or struct and are used to store data associated with an object. 
+  They represent the state or attributes of an object and can have different access modifiers (public, private, protected, etc.) to control their visibility and accessibility.
