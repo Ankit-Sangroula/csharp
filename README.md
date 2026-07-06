@@ -101,4 +101,72 @@ C# provides conditional statements that allow you to control the flow of your pr
 ------------------------------------------------------------------------------------------------------------------------------------------------
 # field:
 Fields are variables that are declared within a class or struct and are used to store data associated with an object. 
-  They represent the state or attributes of an object and can have different access modifiers (public, private, protected, etc.) to control their visibility and accessibility.
+They represent the state or attributes of an object and can have different access modifiers (public, private, protected, etc.) to control their visibility and accessibility.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+# loop:
+Loops are control structures that allow you to repeatedly execute a block of code as long as a specified condition is true.
+Types of loops in C#:
+
+For Loop: Executes a block of code a specific number of times.
+for (initialization; condition; increment/decrement)
+{
+	// code to execute
+}
+While Loop: Executes a block of code as long as a specified condition is true.
+int i = 0;
+while (i < 5)
+{
+	// code to execute
+	i++;
+}
+do-While Loop: Similar to the while loop, but it guarantees that the block of code will be executed at least once, as the condition is checked after the execution.
+int i = 0;
+do {
+	// code to execute
+	i++;
+} while (i < 5);
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+# Array:
+Arrays are used to store multiple values of the same data type in a single variable.
+syntax for declaring an array:
+int[] numbers = new int[5]; // declares an array of integers with a size of 5
+console.writeline(numbers[0]); // access the first element of the array
+numbers[1] = 10; // assign a value to the second element of the array
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+String:
+Strings are used to store sequences of characters. In C#, strings are immutable, meaning that once a string is created, it cannot be changed. However, you can create new strings based on existing ones.
+
+string name = "Ankit";
+console.writeline(name); // output: Ankit
+console.writeline(name.length); // output: 5
+console.writeline(name.toUpper()); // output: ANKIT
+console.writeline(name.toLower()); // output: ankit
+console.writeline(name.substring(0, 3)); // output: Ank
+console.writeline(name.replace("A", "a")); // output: ankit
+console.writeline(name.contains("n")); // output: true
+console.writeline(name.indexOf("k")); // output: 2
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+# constructor:
+constructors are special methods in C# that are used to initialize objects of a class. They have the same name as the class and do not have a return type. Constructors are called automatically when an object is created, allowing you to set initial values for the object's fields or perform any necessary setup.
+class Person
+{
+	private string name;
+	private int age;
+	// Constructor
+	public Person(string name, int age)
+	{
+		this.name = name;
+		this.age = age;
+	}
+	public void DisplayInfo()
+	{
+		Console.WriteLine($"Name: {name}, Age: {age}");
+	}
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
