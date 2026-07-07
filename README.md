@@ -7,6 +7,23 @@ string name = "Ankit";     // text
 bool isPassed = true;      // true/false
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
+# Constants:
+constants are variables whose values cannot be changed after they are initialized. They are declared using the const keyword and must be assigned a value at the time of declaration.
+const double Pi = 3.14159;
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+# Exceptional Handling:
+It is a mechanism in C# that allows you to handle runtime errors and exceptions gracefully, preventing the program from crashing.
+try
+{
+    // risky code
+}
+catch (Exception ex)
+{
+    // runs only if something in the try block went wrong
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------
 # Operators
 
   Operators are symbols that perform operations on variables and values. 
@@ -169,4 +186,23 @@ class Person
 }
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
+# Members:
+It refers to the components of a class or struct in C#. Members can include fields, properties, methods, events, and nested types. They define the behavior and state of an object and can have different access modifiers to control their visibility and accessibility.
+
+class Bank
+{
+    public int AccountNumber;        // ← this is a member (a field)
+    public string AccountType;       // ← this is a member (a field)
+    private double balance;          // ← this is a member (a field)
+
+    public double Balance { ... }    // ← this is a member (a property)
+
+    public Bank(...) { ... }         // ← this is a member (a constructor)
+
+    public void Deposit(...) { ... } // ← this is a member (a method)
+}
+There are two types of members in C#:
+Static Members: Static members belong to the class itself rather than an instance of the class. They can be accessed without creating an object of the class and are shared among all instances of the class.
+Instance Members: Instance members belong to a specific instance of a class. They can only be accessed through an object of the class and can have different values for each instance.
+
 
