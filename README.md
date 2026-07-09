@@ -14,6 +14,17 @@ bool isPassed = true;      // true/false
 
 ---
 
+Type of variables:
+Value types: 
+Value types are stored directly in memory and hold their data.
+They are typically used for simple data types and structures. 
+When you assign a value type to another variable, a copy of the value is made. 
+`int`, `double`, `char`, `bool`, `struct`, `enum`
+
+Reference types: 
+reference type variables store a reference (or address) to the actual data in memory. 
+`string`, `class`, `interface`, `delegate`, `object`
+
 ## Constants
 
 Constants are variables whose values cannot be changed after they are initialized. They are declared using the `const` keyword and must be assigned a value at the time of declaration.
@@ -376,7 +387,8 @@ struct Point
 
 ## Enum
 
-Enums (short for enumerations) are a special data type that lets you define a set of named constants. They represent a collection of related values in a more readable and maintainable way, often used to represent a fixed set of options.
+Enums (short for enumerations) are a special data type that lets you define a set of named constants. 
+They represent a collection of related values in a more readable and maintainable way, often used to represent a fixed set of options.
 
 ```csharp
 enum Day { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday }
@@ -402,4 +414,7 @@ sealed class SealedClass
 Abstract classes are classes that cannot be instantiated directly and are meant to be inherited by other classes. 
 They can contain abstract methods (without implementation) that must be implemented by derived classes, as well as concrete methods (with implementation).
 
-```csharp
+
+---
+## keyword:
+Base
