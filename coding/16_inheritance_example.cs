@@ -5,7 +5,7 @@ class person
     public string Name { get; set; }
     public int Age { get; set; }
     
-    public void Display()
+    public void DisplayPerson()
     {
         Console.WriteLine($"Name: {Name}");
         Console.WriteLine($"Age: {Age}");
@@ -17,7 +17,7 @@ class person
 
     public void DisplayStudent()
     {
-        Display();          
+        DisplayPerson();          
         Console.WriteLine($"Faculty: {Faculty}");
     }
 }
