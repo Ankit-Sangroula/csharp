@@ -1,6 +1,6 @@
 ﻿using System;
 
-class variables
+class Variables
 {
     static void Main()
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-class loop
+class Loop
 {
     static void Main()
     {
