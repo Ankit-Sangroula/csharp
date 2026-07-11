@@ -1,5 +1,5 @@
 ﻿using System;
-class vowel
+class Vowel
 {
     static void Main()
     {

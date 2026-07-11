@@ -36,8 +36,11 @@ const double Pi = 3.14159;
 ---
 
 ## Exception Handling
-
-A mechanism in C# that allows you to handle runtime errors and exceptions gracefully, preventing the program from crashing.
+Exceptional handling is a mechanism in C# that allows you to handle runtime errors and exceptions gracefully, preventing the program from crashing. 
+It involves using try-catch blocks to catch exceptions and handle them appropriately.
+Try is used to enclose the code that may throw an exception, while catch is used to handle the exception and provide an alternative course of action.
+Catch blocks can be used to catch specific types of exceptions or a general exception type. 
+Finally block can be used to execute code that must run regardless of whether an exception occurred or not.
 
 ```csharp
 try
@@ -416,5 +419,41 @@ They can contain abstract methods (without implementation) that must be implemen
 
 
 ---
+# Interface:
+Interfaces define a contract that classes can implement. They contain method signatures, properties, events, or indexers without any implementation.
+Classes that implement an interface must provide concrete implementations for all its members.
+```csharp
+interface IShape
+{
+    double Area();
+    double Perimeter();
+}
+```
+
+---
+# Delegate:
+Delegates are type-safe function pointers that allow you to encapsulate methods and pass them as parameters.
+Delegates are used for defining callback methods, event handling, and implementing the observer pattern.
+To point to a method, the method signature must match the delegate signature.
+
+```csharp
+delegate void Notify(string message);
+
+//To point to a method, you can create an instance of the delegate and pass the method name as a parameter.
+Notify notifyDelegate = DisplayMessage;
+```
+---
+# Partial Class:
+partial classes allow you to split the definition of a class across multiple files.
+Partial classes are useful for organizing large classes, separating auto-generated code from custom code, and enabling collaboration among multiple developers.
+```csharp
+partial class MyClass
+{
+    // Part of the class definition
+}
+```
+---
+
 ## keyword:
-Base
+new is used to hide a member of the base class in the derived class. 
+It indicates that the derived class member is intentionally hiding the base class member with the same name.
