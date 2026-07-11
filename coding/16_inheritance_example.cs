@@ -1,6 +1,6 @@
 ﻿using System;
 
-class person
+class Person
 {
     public string Name { get; set; }
     public int Age { get; set; }
@@ -11,7 +11,7 @@ class person
         Console.WriteLine($"Age: {Age}");
     }
 }
- class student : person
+ class Student : Person
 {
     public string Faculty { get; set; }
 
@@ -25,7 +25,7 @@ class studentShow
 {
     static void Main(string[] args)
     {
-        student stu = new student();
+        Student stu = new Student();
         stu.Name = "John";
         stu.Age = 20;
         stu.Faculty = "Engineering";
