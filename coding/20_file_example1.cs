@@ -8,7 +8,7 @@ class fileExample1
         Console.Write("Enter something: ");
         string input = Console.ReadLine();
 
-        File.WriteAllText("output.txt", input);b
+        File.WriteAllText("output.txt", input);
 
         Console.WriteLine("Saved!");
     }
